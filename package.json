@@ -1,6 +1,6 @@
 {
   "name": "qmeta",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "qmeta: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
