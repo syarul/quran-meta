@@ -1,0 +1,48 @@
+<ion-view title={{menu[0]}}>
+  <ion-nav-bar class="bar-positive" >
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-ios7-more"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <div dynamic="buyFeatDisplay"></div>
+  </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content class="has-header">
+	<div class="item item-text-wrap" dynamic="quickhtml" ></div>
+	<div class="row">
+	  <div class="col">
+	     <div class="item item-text-wrap" style="background:#d5ffc0"  ng-style="surbg">
+			{{menu[1]}}:{{csur}}
+		 </div>
+	  </div>
+	  <div class="col">
+	    <div class="item item-text-wrap" ng-style="aytbg">
+			{{menu[2]}}:{{cayt}}
+		 </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col" dynamic="qsw[1]"></div>
+	  <div class="col" dynamic="qsw[2]"></div>
+	  <div class="col" dynamic="qsw[3]"></div>
+	</div>
+	<div class="row">
+	  <div class="col" dynamic="qsw[4]"></div>
+	  <div class="col" dynamic="qsw[5]"></div>
+	  <div class="col" dynamic="qsw[6]"></div>
+	</div>
+	<div class="row">
+	  <div class="col" dynamic="qsw[7]"></div>
+	  <div class="col" dynamic="qsw[8]"></div>
+	  <div class="col" dynamic="qsw[9]"></div>
+	</div>
+	<div class="row">
+	  <div class="col"><button class="button button-block button-calm icon ion-forward" ng-click="qswitchRight()"></button></div>
+	  <div class="col" dynamic="qsw[0]"></div>
+	  <div class="col"><button class="button button-block button-assertive icon ion-refresh" ng-click="qremVal()"></button></div>
+	</div>
+	<div class="row">
+	  <div class="col col-50 col-offset-25"><button class="button button-block button-balanced icon-center ion-ios7-gear" ng-click="qnav()"> {{menu[3]}}</button></div>
+	</div>           
+  </ion-content>
+</ion-view>

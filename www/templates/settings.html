@@ -1,0 +1,62 @@
+<ion-view title={{menu[0]}}>
+  <ion-nav-bar class="bar-positive" >
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-ios7-more"></button>
+  </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content class="has-header" ng-controller="AppCtrl">
+	<div class="list">
+	  <div class="item item-divider">
+         {{menu[1]}}
+      </div>
+	  <label class="item item-input item-select">
+		<div class="input-label">
+		  {{menu[2]}}
+		</div>
+		<select id="transSelect" ng-model="transSelect" ng-options="o.title for o in translationList">
+		</select>
+	  </label>
+	  <label class="item item-input item-select">
+		<div class="input-label">
+		  {{menu[3]}}
+		</div>
+		<select id="menuLangSelect" ng-model="menuLangSelect" ng-options="o.title for o in langMenuList">
+		</select>
+	  </label>
+	  <label class="item item-input item-select">
+		<div class="input-label">
+		  {{menu[4]}}
+		</div>
+		<select id="menuArabic" ng-model="menuArabic" ng-options="o.title for o in arabicFont">
+		</select>
+	  </label >
+	  <label class="item item-input item-select">
+		<div class="input-label">
+		  {{menu[5]}}
+		</div>
+		<select id="suraList" ng-model="suraList" ng-options="o.title for o in suraStyleList">
+		</select>
+	  </label >
+	  <div class="item item-divider">
+         {{menu[6]}}
+      </div>
+	  <label class="item item-input item-select">
+		<div class="input-label">
+		  {{menu[7]}}
+		</div>
+		<select id="ayaHeaderSelect" ng-model="ayaHeaderSelect" ng-options="o.title for o in ayaHeaderList">
+		</select>
+	  </label>
+	   <label class="item item-input item-select">
+		<div class="input-label">
+		  {{menu[8]}}
+		</div>
+		<select id="ayaFontSelect" ng-model="ayaFontSelect" ng-options="o.title for o in arabicFont">
+		</select>
+	  </label >
+	</div>
+	<div class="row">
+	  <div class="col col-33 col-offset-67"><button class="button button-block button-stable" ng-click="saveSet()">Save</button></div>
+	</div>
+  </ion-content>
+</ion-view>

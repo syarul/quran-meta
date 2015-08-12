@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.ionicframework.qmeta996726" versionCode="101102" version="1.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>qmeta</name>
+  <description>
+       Quran Translation App build using Ionic Framework and Cordova project.
+    </description>
+  <author email="hottincup@gmail.com" href="hottincup@gmail.com">
+      Shahrul Nizam
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  <preference name="SplashScreen" value="screen" />
+  <preference name="SplashScreenDelay" value="10000" />
+  <platform name="android">
+		<icon src="res/drawable-hdpi/ic_launcher.png" density="hdpi" />
+		<icon src="res/drawable-mdpi/ic_launcher.png" density="mdpi" />
+		<icon src="res/drawable-xhdpi/ic_launcher.png" density="xhdpi" />
+		<icon src="res/drawable-xxhdpi/ic_launcher.png" density="xxhdpi" />
+		<icon src="res/drawable-xxxhdpi/ic_launcher.png" density="xxxhdpi" />
+	</platform>
+</widget>

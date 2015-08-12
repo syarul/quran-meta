@@ -1,0 +1,25 @@
+<ion-view title={{menu[0]}}>
+  <ion-nav-bar class="bar-positive" >
+  
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-ios7-more"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button ng-click="asideRight()" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content class="has-header">
+    <ion-list>
+        <ion-item ng-repeat="item in items track by $index" href="#/app/sura/{{item.index}}" ng-click="dataUrl(item.index)"> 
+		<ul class="item-button-left" style="padding-left:45px">
+		  <span dynamic="indexListArabic">{{item.name}} </span> {{item.tname}}<br><p style="margin:0px;color:purple">[{{item.index}}] {{item.ename}}  »</p>
+		  <button style="margin-top:8px;line-height:none" class="button button-icon icon ion-ios7-eye" ng-click="dataURL()"></button>
+		</ul>
+        </ion-item>
+      </ion-list>
+      <ion-infinite-scroll
+        on-infinite="loadMore()"
+        distance="20%">
+      </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

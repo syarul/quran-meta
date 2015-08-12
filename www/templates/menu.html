@@ -1,0 +1,59 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <header style="border-bottom:none" class="bar bar-header bar-stable">
+      <h1 class="title">{{menu[0]}}</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+		<ion-item nav-clear menu-close href="#/app/quicknavigation" ng-click="qremVal()">
+          <i class="icon icon-left ion-flash">
+          &nbsp;&nbsp;&nbsp;&nbsp;{{menu[1]}}
+		  </i>
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/search">
+          <i class="icon icon-left ion-search">
+          &nbsp;&nbsp;&nbsp;&nbsp;{{menu[2]}}
+		  </i>
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/surahindex">
+          <i class="icon icon-left ion-navicon-round">
+          &nbsp;&nbsp;&nbsp;&nbsp;{{menu[3]}}
+		  </i>
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/tags">
+          <i class="icon icon-left ion-bookmark">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menu[4]}}
+		  </i>
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/qnote">
+          <i class="icon icon-left ion-compose">
+          &nbsp;&nbsp;&nbsp;&nbsp;{{menu[5]}}
+		  </i>
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/settings">
+          <i class="icon icon-left ion-wrench">
+          &nbsp;&nbsp;&nbsp;&nbsp;{{menu[6]}}
+		  </i>
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/about">
+          <i class="icon icon-left ion-information-circled">
+          &nbsp;&nbsp;&nbsp;&nbsp;{{menu[7]}}
+		  </i>
+        </ion-item>
+		<ion-item nav-clear href="#" ng-click="exitApp()">
+          <i class="icon icon-left assertive ion-close-circled">
+          &nbsp;&nbsp;&nbsp;&nbsp;<i style="color:#444;">{{menu[8]}}</i>
+		  </i>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

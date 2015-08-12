@@ -1,0 +1,38 @@
+<ion-view>
+  <ion-nav-bar class="bar-positive" >
+  <div dynamic="singleTitle"></div>
+  <ion-nav-buttons side="left">
+    <a href="#/app/surahindex"><button class="button button-icon icon ion-arrow-left-c"></button></a>
+  </ion-nav-buttons>
+   <ion-nav-buttons side="right">
+    <button ng-click="asideRight()" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content class="has-header">
+		<div class="item item-text-wrap" style="text-align:center;padding:0;" dynamic="bismi"></div>
+        <span style="padding:0;line-height:20px" ng-repeat="item in items" ng-click="openPopover($event, item.text, item.tr, item.index)"> 
+	
+		  <a style="padding:8px 10px 3px 10px;cursor:pointer" class="item item-text-wrap" dynamic="verse"></a>
+
+        </span>
+		<script id="my-popover.html" type="text/ng-template">
+		  <ion-popover-view style="height:272px;width:190px">
+			<ion-header-bar>
+			  <h1 class="title">{{menu[4]}}</h1>
+			</ion-header-bar>
+			<ion-content>
+			  <ul style="text-align:center" class="list">
+				<li class="item icon ion-bookmark"><a ng-click="tagThis()">&nbsp;&nbsp;{{menu[5]}}</a></li>
+				<li class="item icon ion-android-share"><a ng-click="shareAnywhere()">&nbsp;&nbsp;{{menu[6]}}</a></li>
+				<li class="item icon ion-social-facebook"><a ng-click="shareFacebook()">&nbsp;&nbsp;Facebook</a></li>
+				<li class="col"><button class="button button-block button-positive" ng-click="closePopover()">{{menu[7]}}</button></li>
+			</ul>
+			</ion-content>
+		  </ion-popover-view>
+		</script>
+      <ion-infinite-scroll
+        on-infinite="loadMore()"
+        distance="20%">
+      </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

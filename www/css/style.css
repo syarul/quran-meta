@@ -1,0 +1,302 @@
+/* Empty. Add your own CSS if you like */
+#renderVerse {
+  direction: rtl; }
+@font-face {
+  font-family: 'taha';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/uthmantn1_ver07.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src:  url(fonts/DroidKufi-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Amiri';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Amiri-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Naskh';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/DroidNaskh-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Scheherazade';
+  font-style: normal;
+  font-weight: 600;
+  src: url(fonts/ScheherazadeRegOT.ttf) format('truetype');
+}
+#taha{
+font-family: 'taha', serif;
+font-size:160%;
+text-align:right;
+line-height:50px;
+direction: rtl;
+}
+#taha-compress{
+font-family: 'taha', serif;
+font-size:140%;
+text-align:left;
+line-height:20px;
+direction: rtl;
+}
+#amiri{
+font-family: 'Amiri', serif;
+font-size:140%;
+text-align:right;
+line-height:50px;
+direction: rtl;
+}
+#amiri-compress{
+font-family: 'Amiri', serif;
+font-size:120%;
+text-align:right;
+//line-height:10px;
+direction: rtl;
+}
+#kufi{
+font-family: 'Droid Arabic Kufi', serif;
+font-size:120%;
+text-align:right;
+line-height:50px;
+direction: rtl;
+}
+#kufi-compress{
+font-family: 'Droid Arabic Kufi', serif;
+font-size:100%;
+line-height:20px;
+direction: rtl;
+}
+#droid{
+font-family: 'Droid Naskh', serif;
+font-size:130%;
+text-align:right;
+line-height:50px;
+direction: rtl;
+}
+#droid-compress{
+font-family: 'Droid Naskh', serif;
+font-size:110%;
+line-height:20px;
+direction: rtl;
+}
+#scheherazade{
+font-family: 'Scheherazade', serif;
+font-size:190%;
+text-align:right;
+line-height:50px;
+direction: rtl;
+}
+#scheh-compress{
+font-family: 'Scheherazade', serif;
+font-size:170%;
+line-height:20px;
+direction: rtl;
+}
+#index-border{
+border:2px solid;
+border-color:grey;
+//border-radius: 5px;
+padding:0px 10px 0 10px;
+margin-right: 8px;
+}
+.alert-info {
+color: #31708f;
+background-color: #d9edf7;
+border-color: #bce8f1;
+}
+.alert {
+padding: 15px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+ strong {
+font-weight: 700;
+}
+.aside-backdrop.am-fade, .modal-backdrop.am-fade {
+background: rgba(0,0,0,.5);
+-webkit-animation-duration: .15s;
+animation-duration: .15s;
+}
+.aside-backdrop {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1040;
+background-color: #000;
+}
+.aside.right {
+right: 0;
+left: auto;
+}
+@media (max-width: 991px)
+.aside {
+min-width: 240px;
+}
+.am-fade-and-slide-right {
+-webkit-animation-duration: .3s;
+animation-duration: .3s;
+-webkit-animation-timing-function: ease-in-out;
+animation-timing-function: ease-in-out;
+-webkit-animation-fill-mode: backwards;
+animation-fill-mode: backwards;
+}
+[tabindex="-1"] {
+outline: 0;
+}
+@media (max-width: 991px)
+.aside {
+min-width: 240px;
+}
+.aside {
+z-index: 1049;
+background: #3C5F75!important;
+position: fixed;
+overflow: auto;
+min-width: 180px;
+width: 200px!important;
+top: 0;
+bottom: 0;
+opacity: 0.9;
+}
+#asideMenu, #asideSura, #asideResult{
+float:left;
+display: block;
+position: relative;
+padding: 0px 0px;
+font: 14px/1.6em Arial, sans-serif;
+color: #A8CBE0;
+opacity:1
+}
+#asideMenu h4, #asideSura h4, #asideResult h4{
+font: 15px/1.8em Arial, sans-serif;
+color: #A8CBE0;
+margin-left:10px;
+}
+#asideMenu ul span, #asideSura ul span, #asideResult ul span{
+color: #A8CBE0;
+text-decoration: none;
+margin-left:10px;
+width:180px;
+}
+#asideMenu ul, #asideSura ul, #asideResult ul{
+padding-top:0px;
+padding:0;
+}
+#asideMenu ul li, #asideSura ul li {
+margin-top:8px;
+background:#253D4D;
+padding: 20px 20px 20px 20px;
+width:200px;
+cursor:pointer;
+}
+#asideResult ul li {
+margin-top:8px;
+background:#253D4D;
+padding: 20px 20px 20px 20px;
+width:200px;
+}
+#asideMenu ul li span p{
+margin:0px;
+}
+#noCursor{
+cursor:default!important;
+}
+
+button.close {
+-webkit-appearance: none;
+padding: 0;
+cursor: pointer;
+background: 0 0;
+border: 0;
+}
+.close {
+float: right;
+font-size: 21px;
+font-weight: 700;
+line-height: 1;
+color: #000;
+text-shadow: 0 1px 0 #fff;
+filter: alpha(opacity=20);
+opacity: .2;
+}
+.am-fade {
+-webkit-animation-duration: .3s;
+animation-duration: .3s;
+-webkit-animation-timing-function: linear;
+animation-timing-function: linear;
+-webkit-animation-fill-mode: backwards;
+animation-fill-mode: backwards;
+opacity: 1;
+}
+#searchList a.item-content{
+padding:0!important;
+}
+.bar-positive{
+background-color:#354871!important;
+border-color:#354871!important;
+}
+#newnote{
+margin-top:0!important;
+}
+.row{margin-left:0!important}
+#qnote ul{
+list-style-type: disc;
+font-size:16px;
+padding-bottom:4px;
+margin-left: 25px!important;
+}
+#qnote ol{
+list-style-type: decimal;
+font-size:16px;
+padding-bottom:4px;
+margin-left: 25px!important;
+}
+#qnote p{
+color:black;
+}
+#qnote i{
+font-style: italic;
+}
+#qnote h1{
+font-size:30px;
+}
+#qnote h2{
+font-size:26px;
+}
+#qnote h3{
+font-size:22px;
+}
+#qnote h4{
+font-size:18px;
+}
+div.popup-body{
+text-align:center;
+}
+#visiblelogo, #visibletext{
+-webkit-animation: myfirst 3s; /* Chrome, Safari, Opera */
+animation: myfirst 3s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+   from {opacity: 0;}
+    to {opacity: 1;}
+}
+.loading-container .loading {
+background:none;
+//font-size:30px;
+}

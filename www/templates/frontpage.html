@@ -1,0 +1,13 @@
+<ion-view style="background:#354871" hide-nav-bar="true">
+  <ion-content menu-toggle="left" id="dg">
+	<div class="item item-body" style="background:#354871;border-style:none">
+		<div id="logoimg"><p style="text-align:center"><img style="margin-top:{{margin}}px;height:{{imgheight}}px;width:auto;" src="./img/qmeta-logo.png"></p></div>
+    </div>
+  </ion-content>
+  <div class="item item-body" style="border-style:none;background:none;position: absolute; bottom: 0px; width: 100%">
+  <div class="row" ng-hide="landsmall">
+	  <div class="col col-50 col-offset-25"><button class="button button-block button-balanced icon-center ion-navigate" menu-toggle="left"> {{menuinfo[1]}}</button></div>
+	</div> 
+		<p id="visibletext" style="text-align:center;top:50%">{{menuinfo[0]}}</p>
+    </div>
+</ion-view>

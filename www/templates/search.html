@@ -1,0 +1,29 @@
+<ion-view title={{menu[0]}}>
+  <ion-nav-bar class="bar-positive" >
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-ios7-more"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <div dynamic="buyFeatDisplay"></div>
+  </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content class="has-header" id="dragEvent">
+	
+    <div class="list list-inset">
+	  <label class="item item-input">
+		<i class="icon ion-search placeholder-icon"></i>
+		<input type="text" placeholder="{{menu[1]}}" restrict="[^a-z0-9\-\s]" ng-model="searchInput" ng-change="trigger()" focus-out="triggerScroll"> 	
+	  </label>
+	</div>
+	<div class="item item-text-wrap" dynamic="searchTag" ></div>{{lastEventCalled}}
+	<ion-item id="searchList" style="padding:0;line-height:20px;" ng-repeat="item in items" href="#/app/search/{{item.surId}}" ng-click="dataUrl(item.surId, item.aytId)"> 
+	
+		  <ul style="padding:3px 10px 3px 10px;" class="item item-text-wrap" dynamic="result"></ul>
+
+    </ion-item>
+	 <ion-infinite-scroll
+        on-infinite="loadMore()"
+        distance="10%" replace>
+      </ion-infinite-scroll>
+  </ion-content>
+</ion-view>
