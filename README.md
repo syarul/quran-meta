@@ -17,7 +17,7 @@ config.xml
 package.json
 www folder
 ```
-Once done
+Once done,
 ```
 git init
 git remote add origin https://github.com/syarul/quran-meta
@@ -25,7 +25,7 @@ git fetch
 bower & npm install
 ```
 
-install this additional cordova plugins
+Install this additional cordova plugins.
 
 [AndroidInAppBilling](https://github.com/poiuytrez/AndroidInAppBilling)
 
@@ -36,7 +36,7 @@ install this additional cordova plugins
 [Cordova SocialSharing](https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin)
 
 
-for quick test on browser simply run
+For quick test on browser simply run
 ```
 ionic serve
 ```
@@ -47,4 +47,4 @@ Inside www/css there are two additional css files spinner.css and loader.css unu
 
 #Contribution
 
-Feel free to drop anything. [Tanzil.net](http://tanzil.net/trans/) has more translations, but ony downloadable as txt files if you need them converted into json format to used with this app let me know of it.
+Feel free to drop anything. [Tanzil.net](http://tanzil.net/trans/) has more translations, but ony downloadable as txt files if you need them converted into json let me know of it.
