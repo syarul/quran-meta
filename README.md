@@ -11,7 +11,6 @@ cd qmeta
 ```
 Delete these default files from the ionic packages.
 ```
-.gitignore
 bower.json 
 config.xml
 package.json
